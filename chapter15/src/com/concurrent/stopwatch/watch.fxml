@@ -1,0 +1,26 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<FlowPane fx:controller="com.concurrent.stopwatch.WatchController"
+	xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="5" vgap="5">
+	<HBox fx:id="hbType" prefWidth="400" prefHeight="40" alignment="center">
+		<fx:define>
+			<ToggleGroup fx:id="tgType" />
+		</fx:define>
+		<RadioButton fx:id="rbSecond" prefWidth="150" prefHeight="40" toggleGroup="$tgType"
+			text="秒级计时" />
+		<RadioButton fx:id="rbMilli" prefWidth="150" prefHeight="40" toggleGroup="$tgType"
+			text="毫秒计时" selected="true" />
+	</HBox>
+	<HBox fx:id="hbTime" prefWidth="400" prefHeight="40" alignment="center">
+		<Label fx:id="labelSecond" prefWidth="100" prefHeight="40" text="00:00" />
+		<Label fx:id="labelDot" prefWidth="10" prefHeight="40" text="." />
+		<Label fx:id="labelMilli" prefWidth="100" prefHeight="40" text="000" />
+	</HBox>
+	<Button fx:id="btnCount" prefWidth="400" prefHeight="40" text="开始计时" />
+</FlowPane>

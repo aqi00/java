@@ -1,0 +1,15 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<FlowPane fx:controller="com.concurrent.mouse.HitMouseController"
+	xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="5" vgap="5">
+	<HBox fx:id="hbHead" prefWidth="560" prefHeight="40">
+		<Label fx:id="labelTime" prefWidth="200" prefHeight="40" alignment="center" text="00:00" />
+		<Button fx:id="btnStart" prefWidth="160" prefHeight="40" alignment="center" text="开始游戏" />
+		<Label fx:id="labelCount" prefWidth="200" prefHeight="40" alignment="center" text="击打结果" />
+	</HBox>
+	<GridPane fx:id="gpGrass" prefWidth="560" prefHeight="630" />
+</FlowPane>
