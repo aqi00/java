@@ -1,0 +1,31 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+
+<VBox fx:id="vbRoot" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.network.im_client.QQLoginController" alignment="center">
+  <children>
+    <Label fx:id="labelTop" prefWidth="400" prefHeight="160" />
+    <HBox fx:id="hbUser" prefWidth="400" prefHeight="110">
+      <children>
+        <Label fx:id="labelLogo" prefWidth="100" prefHeight="100" />
+        <Label fx:id="label2" prefWidth="10" prefHeight="110" />
+        <VBox fx:id="vbUser" prefWidth="300" prefHeight="110">
+          <TextField fx:id="fieldUser" prefWidth="280" prefHeight="50" promptText="请输入账号" />
+          <Label fx:id="label3" prefWidth="280" prefHeight="10" />
+          <PasswordField fx:id="fieldPassword" prefWidth="280" prefHeight="50" promptText="请输入密码" />
+        </VBox>
+      </children>
+      <padding>
+        <Insets top="20.0" bottom="20.0" left="50.0" right="50.0"/>
+      </padding>
+	</HBox>
+    <Button fx:id="btnLogin" prefWidth="410" prefHeight="70" text="登　　录" />
+  </children>
+  <padding>
+    <Insets top="0.0" bottom="40.0" left="0.0" right="0.0"/>
+  </padding>
+</VBox>

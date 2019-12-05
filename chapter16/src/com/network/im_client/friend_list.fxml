@@ -1,0 +1,15 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+
+<VBox fx:id="vbRoot" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.network.im_client.FriendListController" alignment="center">
+  <children>
+    <Label fx:id="labelTop" prefWidth="400" prefHeight="50" text="在线好友" alignment="center" />
+    <ListView fx:id="listFriend" prefWidth="400" prefHeight="100" VBox.vgrow="ALWAYS"/>
+  </children>
+  <padding>
+    <Insets top="0.0" bottom="10.0" left="0.0" right="0.0"/>
+  </padding>
+</VBox>
