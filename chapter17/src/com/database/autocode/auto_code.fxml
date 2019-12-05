@@ -1,0 +1,18 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+
+<FlowPane fx:id="fpRoot" fx:controller="com.database.autocode.AutoCodeController"
+	xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="5" vgap="5">
+	<Label fx:id="labelDatabase" prefWidth="500" prefHeight="50" text="等待加载数据库信息"/>
+	<HBox fx:id="hbHead" prefWidth="500" prefHeight="40">
+		<ComboBox fx:id="dbTable" prefWidth="350" prefHeight="30" />
+        <Label fx:id="label1" prefWidth="10" prefHeight="50"/>
+		<Button fx:id="btnExport" prefWidth="140" prefHeight="30" alignment="center" text="导出源码"/>
+	</HBox>
+	<TableView fx:id="tableInfo" prefWidth="500" prefHeight="250"/>
+</FlowPane>
