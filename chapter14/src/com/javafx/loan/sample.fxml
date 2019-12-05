@@ -1,0 +1,27 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<?import com.javafx.NumberField?>
+
+<FlowPane fx:controller="com.javafx.loan.Controller"
+	xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="5" vgap="5">
+    <HBox fx:id="hbPrice" prefWidth="400" prefHeight="40">
+        <Label fx:id="labelPrice" prefWidth="120" prefHeight="40" text="购房总价：" />
+        <NumberField fx:id="fieldPrice" prefWidth="230" prefHeight="40"/>
+        <Label fx:id="labelPriceUnit" prefWidth="50" prefHeight="40" text="　万" />
+    </HBox>
+    <HBox fx:id="hbLoan" prefWidth="400" prefHeight="40">
+        <Label fx:id="labelLoan" prefWidth="120" prefHeight="40" text="按揭部分：" />
+        <NumberField fx:id="fieldLoan" prefWidth="230" prefHeight="40"/>
+        <Label fx:id="labelLoanUnit" prefWidth="50" prefHeight="40" text="　%" />
+    </HBox>
+    <HBox fx:id="hbCalculate" prefWidth="400" prefHeight="40">
+        <Button fx:id="btnLoan" prefWidth="400" prefHeight="40" text="计算贷款总额"/>
+    </HBox>
+    <HBox fx:id="hbResult" prefWidth="400" prefHeight="40">
+        <Label fx:id="labelLoanResult" prefWidth="400" prefHeight="40" text="这里显示贷款结果"/>
+    </HBox>
+</FlowPane>
