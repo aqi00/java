@@ -31,7 +31,7 @@ public class HttpTesterController implements Initializable {
 		String work_dir = System.getProperty("user.dir"); // 获取用户程序的当前目录
 		work_dir += "/logs/"; // 日志文件放在程序目录的logs子目录下
 		File file = new File(work_dir); // 创建指定路径的文件对象
-		if (!file.exists()) { // 如果该文件/目录不存在
+		if (!file.exists()) { // 如果该文件或该目录不存在
 			file.mkdirs(); // 创建该目录
 		}
 		System.setProperty("WORKDIR", work_dir); // 设置环境变量WORKDIR的取值
