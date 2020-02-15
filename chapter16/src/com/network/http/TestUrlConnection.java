@@ -32,6 +32,8 @@ public class TestUrlConnection {
 			conn.setConnectTimeout(5000); // 设置连接的超时时间，单位毫秒
 			conn.setReadTimeout(5000); // 设置读取应答数据的超时时间，单位毫秒
 			//conn.setRequestProperty("Accept", "*/*"); // 设置连接的请求属性
+			// 设置用户代理，包括操作系统版本、浏览器版本等等
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0");
 			conn.connect(); // 开始连接
 			// 打印HTTP调用的应答内容长度、内容类型、压缩方式
 			System.out.println( String.format("应答内容长度=%d, 内容类型=%s, 压缩方式=%s", 
