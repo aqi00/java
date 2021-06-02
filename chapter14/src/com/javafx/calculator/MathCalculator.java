@@ -221,8 +221,8 @@ public class MathCalculator extends Application {
 			return;
 		}
 		if (inputText.equals("/=")) { // 求倒数运算
-			if ("0".equals(firstNum)) { // 发现被除数是0
-				ToastUtil.show("被除数不能为零");
+			if ("0".equals(firstNum)) { // 发现除数是0
+				ToastUtil.show("除数不能为零");
 				return;
 			}
 			result = String.valueOf(Arithmetic.rec(firstNum));
@@ -275,17 +275,17 @@ public class MathCalculator extends Application {
 		} else if (operator.equals("*")) { // 当前是相乘运算
 			result = String.valueOf(Arithmetic.mul(firstNum, nextNum));
 		} else if (operator.equals("/")) { // 当前是相除运算
-			if ("0".equals(nextNum)) { // 发现被除数是0
-				ToastUtil.show("被除数不能为零"); // 被除数为0，要弹窗提示用户
+			if ("0".equals(nextNum)) { // 发现除数是0
+				ToastUtil.show("除数不能为零"); // 除数为0，要弹窗提示用户
 				return false; // 返回false表示运算失败
-			} else { // 被除数非0，则进行正常的除法运算
+			} else { // 除数非0，则进行正常的除法运算
 				result = String.valueOf(Arithmetic.div(firstNum, nextNum));
 			}
 		} else if (operator.equals("%")) { // 当前是取余数运算
-			if ("0".equals(nextNum)) { // 发现被除数是0
-				ToastUtil.show("被除数不能为零"); // 被除数为0，要弹窗提示用户
+			if ("0".equals(nextNum)) { // 发现除数是0
+				ToastUtil.show("除数不能为零"); // 除数为0，要弹窗提示用户
 				return false; // 返回false表示运算失败
-			} else { // 被除数非0，则进行正常的除法运算
+			} else { // 除数非0，则进行正常的除法运算
 				result = String.valueOf(Arithmetic.rem(firstNum, nextNum));
 			}
 		}
